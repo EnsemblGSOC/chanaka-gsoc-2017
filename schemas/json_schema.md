@@ -8,6 +8,7 @@ We will add what the standards for this schema are e.g. consistent use of case i
 
 ```json
 {
+  "version" : "1.0.0",
   "short_name" : "GENCODE M24",
   "long_name" : "GENCODE gene set for Mouse Build 24",
   "description" : "The gencode gene set is ...",
@@ -37,8 +38,9 @@ Below is the specification of the various keys and values for the above schema.
 
 ## Top Level
 
-|Key|Meaning|Type|Parent|Required|Example|
-----|-------|----|------|--------|-------|
+|Key|Meaning|Type|Required|Example|
+----|-------|----|--------|-------|
+| `version` | The schema version used | String | Yes | `1.0.0` |
 | `short_name` | A short string used to describe a track in space limited situations  | String | Yes | `GENCODE M24`|
 | `long_name` | A long string used to describe a track  | String | Yes | `GENCODE Gene set for Mouse Build 24`|
 | `description` | Full track description used in interfaces | String | Yes | `The GENCODE gene set is a ...`|
@@ -77,3 +79,4 @@ The following keys are used to help to locate the data in question for a track. 
 
 # Versioning
 
+We will follow semantic versioning rules as laid out at http://semver.org/ for the above schema
