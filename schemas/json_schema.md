@@ -45,9 +45,9 @@ Below is the specification of the various keys and values for the above schema.
 | `long_name` | A long string used to describe a track  | String | Yes | `GENCODE Gene set for Mouse Build 24`|
 | `description` | Full track description used in interfaces | String | Yes | `The GENCODE gene set is a ...`|
 | `track_type` | The type of track this data represents. Is a soft enum i.e. user defined and can be anything but very strict in its selection criteria | String | Yes | `gene`, `repeats`, `dna_alignment`, `gc_content`|
-| `genome` | Hash used to describe the genome this track should be viewed on | Hash | Yes | `"genome" : {} `|
-| `release` | Describes the Ensembl release the track was available in | Hash | Yes | `"release" : {} `|
-| `location` | A hash used to describe the location of a track e.g. URL, MySQL | Hash | Yes | `"location" : {} `|
+| `genome` | Hash used to describe the genome this track should be viewed on | `Genome` object | Yes | `"genome" : {} `|
+| `release` | Describes the Ensembl release the track was available in | Hash | `Release` object | `"release" : {} `|
+| `location` | A hash used to describe the location of a track e.g. URL, MySQL | `Location` object | Yes | `"location" : {} `|
 
 ## Genome
 
