@@ -25,6 +25,8 @@ All the information about how to run, develop and also deploy are available on e
 
 All the main 3 components are finish according to the plan and ready to use. As I mentioned earlier, each project repository has seperate instructions on how to run these applications. `Ensembl OLD to New Database Converter` and `Ensembl Elastic Rest API` are back end applications and `Ensembl-UI` is the component which users are interacting with. So here's how we have to use it.
 
+As for now, we only have tracks for type `gene` only. So you have to search only that track type as shown in the image. And also when searching the input field `Free Text Search` is mandetory. And other filed,you can leave empty. And also all these applications are hosted in free testing servers. So sometimes performance can be little slow when searching new tracks.
+
 ![Ensembl-UI](https://github.com/EnsemblGSOC/chanaka-gsoc-2017/blob/master/Ensembl-UI-Demo.png "Ensembl-UI")
 
 
