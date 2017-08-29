@@ -29,9 +29,15 @@ As for now, we only have tracks for type `gene` only. So you have to search only
 
 ![Ensembl-UI](https://github.com/EnsemblGSOC/chanaka-gsoc-2017/blob/master/Ensembl-UI-Demo.png "Ensembl-UI")
 
+### Future development and enhancements
 
+I have developed 3 applications from the scratch for Ensembl Organization. Two back end applications and front end application.
+I used Java as my main programming language , Spring Boot as application framework , Maven as the build tool , MySQL as primary database instance and Elastic Search for advaned indexing and searching of Tracks. For the front end, AngularJS , Gulp , Bootstrap and jQuery.
 
+All these applications are developed according to industry standards. So anyone can develop and understand the projects. As future enhancements, it's good to add these.
 
-
-
-
+1. Add more data into the application for better searching.
+2. Make searching little bit faster analysing most used keywords and caching them.
+3. Add more data visualizing features to front end.
+4. Add termainl/command line operations features to back end applications.
+5. Expand the REST API for more advanced searching and other locations like URL based data sources.
