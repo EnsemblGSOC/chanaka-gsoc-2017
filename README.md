@@ -1,5 +1,5 @@
-# chanaka-gsoc-2017
-Project for Chanaka de Silva for GSOC 2017
+# Google Summer of Code 2017
+## Final Work Product Submission Report
 
 # Links
 
