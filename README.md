@@ -29,6 +29,14 @@ As for now, we only have tracks for type `gene` only. So you have to search only
 
 ![Ensembl-UI](https://github.com/EnsemblGSOC/chanaka-gsoc-2017/blob/master/Ensembl-UI-Demo.png "Ensembl-UI")
 
+### How we managed the project and all it's components in a effective way
+
+To manage all the tasks and new developments, we used Github issues and to better use of issues tracker, we used Milestones to manage specific list of issues. So basically we (me and my mentors) had 3 months to finish this project. Main project contains 3 sub projects as I mentioned earlier. So we had 3 different Milestones for each coding period. That's a really effective way of managing the project. Mentors can add any kind of issue of the project and i can follow it and fix it. Not as sending emails and chats, issues are there and we never miss them to fix.
+
+Now all the 3 main stages are finished and all milestones are finished now.
+
+https://github.com/EnsemblGSOC/chanaka-gsoc-2017/milestones?state=closed
+
 ### Future development and enhancements
 
 I have developed 3 applications from the scratch for Ensembl Organization. Two back end applications and front end application.
