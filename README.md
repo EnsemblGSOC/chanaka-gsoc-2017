@@ -22,3 +22,14 @@ All the information about how to run, develop and also deploy are available on e
 - [JSON Schema description](https://github.com/Ensembl/chanaka-gsoc-2017/blob/master/schemas/json_schema.md)
 
 ### Current State of the Project
+
+All the main 3 components are finish according to the plan and ready to use. As I mentioned earlier, each project repository has seperate instructions on how to run these applications. `Ensembl OLD to New Database Converter` and `Ensembl Elastic Rest API` are back end applications and `Ensembl-UI` is the component which users are interacting with. So here's how we have to use it.
+
+![Ensembl-UI](https://github.com/EnsemblGSOC/chanaka-gsoc-2017/blob/master/Ensembl-UI-Demo.png "Ensembl-UI")
+
+
+
+
+
+
+
