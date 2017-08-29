@@ -11,11 +11,32 @@ This is a brief introduction on the project which is currently in use in Ensembl
 
 This project contains 3 major parts. So i managed to develope all the 3 parts seperately in order to ease of development and also deployment. Here are those 3 parts.
 
-1. Ensembl-UI (https://github.com/chanakaDe/ensembl-ui)
-2. Ensembl OLD to New Database Converter (https://github.com/chanakaDe/ensembl-db-convert)
-3. Ensembl Elastic Rest API (https://github.com/chanakaDe/ensembl-elastic-rest-final)
+1. Ensembl OLD to New Database Converter (https://github.com/chanakaDe/ensembl-db-convert)
+2. Ensembl Elastic Rest API (https://github.com/chanakaDe/ensembl-elastic-rest-final)
+3. Ensembl-UI (https://github.com/chanakaDe/ensembl-ui)
 
 All the information about how to run, develop and also deploy are available on each repository seperately.
+
+##### Here I'm going to give a brief description on all these 3 components and how they are linked together.
+
+#### Ensembl OLD to New Database Converter
+
+Before starting any of the components, we need to run this project and convert all the old mysql data into new data schema. The main goal of this application is to populate the new MySQL schema. This new schema is used to add JSON documents into the Elastic server. This is a standalone application and no need to deploy on a server. You can clone this application, and you need to follow all the instruction given in the documentation and run it. Make sure you set up this project and import all the data into new database before setting up next 2 projects.
+
+#### Ensembl Elastic Rest API
+
+This is the 2nd most important component of this project. Once you run the first application, you have a database with new schema and full of data. Then all you have to do is run this application according to the instructions given. This application has two tasks. They are mentioned below:
+
+1. Populate Elastic Search instance with New MySQL data
+2. Expose Elastic Search search results as REST end points (Provide a RESTful infrastructure to users)
+
+This is an open REST API and anyone can access it. For now this REST end points are used in `Ensembl-UI` and can be used in any kind of client including Android application, iOS application, Windows application or any web application.
+
+#### Ensembl-UI
+
+This is the project component which users interacting directly. Once you set up `Ensembl Elastic Rest API` , you can deploy this application by providing the hosting details of REST API. All the instructions are provided in the official documentation of the project. This application mainly used to query through Elastic Search Tracks. Users can search via 5 main parameters. And can get a list of tracks according to the search parameters. 
+
+In my example, this application is hosted using Heroku and can be hosted using any type of server. After you build the application, it become a simple HTML application which is easy to manage and deploy. So can be hosted as a PHP application or direct HTML 5 application.
 
 #### When using Elastic-Search, this is the JOSN object you need to use : 
 
